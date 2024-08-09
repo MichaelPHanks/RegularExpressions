@@ -5,6 +5,10 @@ import org.example.FloatingPoint.FloatingPointVerifier
 
 class ValidFloatingPoint: FloatingPointState {
     override fun consumeCharacter(char: String, floatingPointVerifier: FloatingPointVerifier) {
-        TODO("Not yet implemented")
+        if (char !in "0123456789")
+        {
+            floatingPointVerifier.state = InvalidFloatingPoint()
+        }
+
     }
 }

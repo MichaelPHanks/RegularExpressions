@@ -5,6 +5,9 @@ import org.example.FloatingPoint.FloatingPointVerifier
 
 class NumberFirstFloatingPoint: FloatingPointState {
     override fun consumeCharacter(char: String, floatingPointVerifier: FloatingPointVerifier) {
-        TODO("Not yet implemented")
+        if (char == ".")
+        {
+            floatingPointVerifier.state = FirstPeriodFloatingPoint()
+        }
     }
 }
