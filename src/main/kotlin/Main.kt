@@ -1,5 +1,7 @@
 package org.example
 
+import org.example.Integer.IntegerVerifier
+
 fun main() {
     println("Hello World!")
 

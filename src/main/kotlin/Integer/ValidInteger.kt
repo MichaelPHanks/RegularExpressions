@@ -1,10 +1,10 @@
-package org.example
+package org.example.Integer
 
-class ValidState: IntegerState {
+class ValidInteger: IntegerState {
     override fun consumeCharacter(char: String, integerVerifier: IntegerVerifier) {
         if (char !in "0123456789")
         {
-            integerVerifier.state = InvalidState()
+            integerVerifier.state = InvalidInteger()
         }
     }
 }
